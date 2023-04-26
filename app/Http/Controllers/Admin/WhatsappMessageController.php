@@ -136,6 +136,7 @@ class WhatsappMessageController extends Controller
 
     public function send_whatsapp_msg_user(Request $request)
     {
+        echo "sam";exit();
         $whatsappMsg = WhatsappMessage::find($request->msg_id);
         $user = User::find($request->user_id);
         
